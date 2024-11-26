@@ -74,7 +74,7 @@ jobs:
 
     - name: Download workflow artifact
       if: ${{ github.event.workflow_run.event == 'pull_request' }}
-      uses: dawidd6/action-download-artifact@v2
+      uses: dawidd6/action-download-artifact@v6
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         workflow: caller_virtual_hardware.yml
